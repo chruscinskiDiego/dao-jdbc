@@ -25,5 +25,12 @@ public class Program {
             System.out.println(obj);
         }
 
+        System.out.println("Teste N° 4: Seller insert");
+
+        Seller newSeller = new Seller(null, "Diego", "contato@diegochruscinski.com.br", new Date(), 1.750, department);
+        sellerDao.insert(newSeller);
+
+        System.out.println("Inserted! New id = "+ newSeller.getId());
+
     }
 }
